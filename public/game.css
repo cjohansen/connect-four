@@ -1,0 +1,76 @@
+.board {
+  float: left;
+  position: relative;
+}
+
+.col {
+  background: #00c;
+  position: relative;
+  float: left;
+  margin-top: 10vh;
+}
+
+.tile {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 1vh;
+  position: relative;
+}
+
+.tile-inner,
+.pending,
+.piece {
+  border: 5vh solid #fff;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+}
+
+.piece {
+  top: 1vh;
+  left: 1vh;
+  position: absolute;
+}
+
+.pending {
+  position: absolute;
+  top: -10vh;
+  left: 1vh;
+}
+
+.yellow,
+.yellow .tile-inner {
+  border-color: yellow;
+}
+
+.red,
+.red .tile-inner {
+  border-color: red;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.winner .box {
+  margin-top: 5vh;
+  padding: 2vh 10vh;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  font-size: 2em;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
