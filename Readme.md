@@ -16,6 +16,7 @@ npm start
 # Test it
 
 ```js
+npm install
 npm run autotest
 ```
 
